@@ -16,11 +16,9 @@ inpust.forEach((item) => {
     }
     else if ((target.name === "ism" || target.name === "familya") && ![...target.value].every((l) => isNaN(Number(l)))) {
       setError(target.nextElementSibling, "ism va familyada faqat harflar qatnashishi kerak")
-
     }
     else if (target.name === "familya" && target.value.length <= 4) {
-      setError(target.nextElementSibling, "Ism 3ta harfdan ko'p bulishi kerak")
-
+      setError(target.nextElementSibling, "Ism 4ta harfdan ko'p bulishi kerak")
     }
     else if (target.name === "emailInp" && !target.value.includes("@")) {
       setError(target.nextElementSibling, "Email xato kiritildi")
@@ -28,26 +26,16 @@ inpust.forEach((item) => {
     else {
       clearError(target.nextElementSibling)
     }
-
   })
-
 })
-
-
 button.addEventListener('click', () => {
   if (secondpassword.value !== password.value) {
     pasw.innerText = "kodni tasdiqlash xato buldi"
   }
 })
-
-
-
 function setError(errorElem, errorMessage) {
   errorElem.innerText = errorMessage
 }
-
 function clearError(errorElem) {
   errorElem.innerText = ""
 }
-
-
