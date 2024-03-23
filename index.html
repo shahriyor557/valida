@@ -30,11 +30,12 @@
         </div>
         <div class="nationality_email_wrapper">
           <div class="form-group">
-            <label for="nationality">Nationality</label>
+            <label for="nationality" >Nationality</label>
             <select name="nationality" id="nationality">
-              <option value="">American</option>
-              <option value="">uzbek</option>
-              <option value="">korean</option>
+              <!-- <option value="noNationality"></option> -->
+              <option value="American">American</option>
+              <option value="uzbek">uzbek</option>
+              <option value="korean">korean</option>
             </select>
           </div>
           <div class="form-group">
@@ -48,51 +49,43 @@
             <label for="">Date of Birth</label>
             <div class="dateofbirth_inputs">
               <select name="date" id="date">
-                <option value="">21</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
-                <option value="">11</option>
-                <option value="">12</option>
-                <option value="">13</option>
-                <option value="">14</option>
-                <option value="">15</option>
-               
+                <option value="21">21</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
               </select>
               <span class="error"></span>
               <select name="month" id="month">
-                <option value="">December</option>
-                <option value="">Jan</option>
-                <option value="">Feb</option>
-                <option value="">March</option>
-                <option value="">Apr</option>
-                <option value="">May</option>
-                <option value="">Jun</option>
-                <option value="">Jul</option>
-                <option value="">Aug</option>
-                <option value="">Sep</option>
-                <option value="">Oct</option>
-                <option value="">Nov</option>
+                <option value="Dec">December</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="March">March</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="jun">Jun</option>
+                <option value="jul">Jul</option>
+                <option value="aug">Aug</option>
+                <option value="sep">Sep</option>
+                <option value="oct">Oct</option>
+                <option value="nov">Nov</option>
                 <option value="">Dec</option>
               </select>
               <span class="error"></span>
               <select name="year" id="year">
-                <option value="">1995</option>
-                <option value="">2000</option>
-                <option value="">2001</option>
-                <option value="">2002</option>
-                <option value="">2003</option>
-                <option value="">2004</option>
-                <option value="">2005</option>
-                <option value="">2006</option>
-                <option value="">2010</option>
+                <option value="1995">1995</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2010">2010</option>
               </select>
               <span class="error"></span>
             </div>
@@ -124,14 +117,16 @@
             <span class="errorPas"></span>
           </div>
         </div>
-      </form>
-      <div class="linkToLoginPage_and_signubBtn">
-        <div class="link-to-login">
-          <span class="text">Have an account?</span>
-          <span class="text"><a href="https://www.codewars.com/kata/5592e3bd57b64d00f3000047/train/javascript">Login</a></span>
+
+        <div class="linkToLoginPage_and_signubBtn">
+          <div class="link-to-login">
+            <span class="text">Have an account?</span>
+            <span class="text"><a href="https://www.codewars.com/kata/5592e3bd57b64d00f3000047/train/javascript">Login</a></span>
+          </div>
+          <button   id="button">Complete Signup</button>
         </div>
-        <button type="button" id="button">Complete Signup</button>
-      </div>
+      </form>
+     
     </div>
   </div>
 
